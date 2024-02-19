@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/**Font Selectors**/
+
+@font-face{
+    font-family: 'outfit';
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'young-serif';
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+/**General styling**/
+
+body{
+    font-family: 'young-serif';
+    font-weight: 400;
+    background-color: hsl(30, 54%, 90%);
+}
+
+body > div{
+    background-color: white;
+    margin: auto;
+    width: 375px; /*should have added padding here. nobie mistake lol*/ 
+}
+
+/**Specific Styling:**/
+
+#img{
+    width: 375px;
+    margin: auto;
+    padding: 0;
+}
+
+h1{
+    font-size: 2.3em;
+    font-weight: lighter;
+    color: hsl(24, 5%, 18%);
+    line-height: 1em;
+    padding: 6% 9%;
+}
+
+p{
+    padding: 0 10%;
+    font-family: 'outfit';
+    color: grey;
+}
+
+.box{
+    margin: 10%;
+    padding: 5% 2%;
+    font-family: 'outfit';
+    background-color: hsl(330, 100%, 98%);
+    
+}
+/**list items general**/  /*Stupid idea, especially this padding here*/
+li{
+    font-size: large;
+    font-weight: 400;
+    color: grey;
+    font-family: 'outfit';
+    padding: 5px 20px;   
+}
+
+.box > h3{
+    padding: 0 0 8% 5%;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: hsl(332, 51%, 32%);
+
+}
+.box > ul{
+    list-style-position: outside;
+    line-height: 1.6em;
+}
+.box > ul ::marker{
+    color: hsl(332, 51%, 32%);
+    font-size: smaller;
+}
+
+/**ingredients section**/
+
+h2{
+    color: hsl(14, 45%, 36%);
+    padding: 2% 10%;
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.ingredient-list{
+    margin: 0 5%;
+    line-height: 1.5em;
+}
+.ingredient-list ::marker{
+    color: hsl(14, 45%, 36%);
+}
+.ingredient-list > li{
+    font-size: 1em;
+    font-weight: 600;
+    padding: 2% 8%;
+}
+hr{
+    margin: 30px 30px; 
+    background-color: lightgray;
+    border: none;
+    height: 1px;
+}
+
+/**instructions section**/
+
+.instructions{
+    margin: 3% 7%;
+}
+.instructions ::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+/*nutrition section*/
+
+.nutrition-para{
+    margin: 3% 0 8% 0;
+}
+
+table{
+    margin: auto;
+    font-family: "outfit";
+    text-align: left;
+    width: 75%;
+    border-collapse: collapse;
+}
+td{
+    border-bottom: 1px solid black;
+    border-color: lightgray;
+    padding: 15px 25px;
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+.gray{
+    color: gray;
+}
+
+/*Desktop*/
+@media screen and (min-width: 768px){
+    .container{
+        width: 50%;
+        margin: 10% auto;
+        border-radius: 25px;
+    }
+    #img{
+        margin: 6%;
+        width: 88%;
+        border-radius: 15px;
+    }
+    h1{
+        padding: 0 6%;
+    }
+    p{
+        padding: 3% 6%;
+    }
+
+    /*preparation box*/
+    .box{
+        margin: 6%;
+        padding: 2%;
+        border-radius: 15px;
+    }
+    .box > h3{
+        padding: 3% 5% 1% 3%;
+    }
+    li{
+        padding: 1.5% 3%;
+        margin: 0;
+    }
+
+    /*ingredients section*/
+    h2{
+        margin: 3% 6%;
+        padding: 0;
+    }
+    .ingredient-list > li{
+        padding: 1.5%;
+    }
+    hr{
+        margin: 30px 45px;
+    }
+
+    /*instructions section*/
+    .instructions{
+        margin: 3% 5%;
+    }
+    
+    .nutri{
+        margin: 0 6%;
+        padding: 0;
+    }
+    .nutrition-para{
+        margin: 1% 6%;
+        padding: 0;
+    }
+
+    table{
+        width: 88%;
+        margin-top: 20px;
+    }
+}
